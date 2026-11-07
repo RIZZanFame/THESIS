@@ -1,0 +1,331 @@
+\documentclass[12pt,a4paper]{report}
+
+% ---------- Encoding & language ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% ---------- Layout ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% ---------- Math ----------
+\usepackage{amsmath,amssymb,amsthm}
+
+% ---------- Graphics & tables ----------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+
+% ---------- Links & references ----------
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+
+% ---------- Custom commands ----------
+\newcommand{\R}{\mathbb{R}}
+
+% ---------- Title-page fields ----------
+\newcommand{\thesissupervisor}{Prof.\ Christopher Ehrmann}
+\newcommand{\thesisschool}{School of Mechanical Engineering and Robotics}
+\newcommand{\thesisprogram}{Sino-German Mechanical and Energy Engineering (CDHK)}
+
+% ---------- Title metadata ----------
+\title{Thermal Debonding of Adhesive Joints in EV Battery Pack Disassembly\\
+\large A parametric simulation study of localized heating windows for releasing bonded cells without thermal runaway}
+\author{Rizzolio Matteo}
+\date{\today}
+
+\begin{document}
+
+% ============================================================
+% FRONT MATTER
+% ============================================================
+
+\begin{titlepage}
+\centering
+\vspace*{0.4cm}
+
+\includegraphics[width=7.2cm]{figures/tongji_logo.png}\par
+
+\vspace{0.8cm}
+{\LARGE\bfseries TONGJI UNIVERSITY}\par
+\vspace{0.35cm}
+{\large \thesisschool}\par
+{\large \thesisprogram}\par
+
+\vspace{2.0cm}
+{\large\scshape Bachelor's Thesis}\par
+
+\vspace{0.8cm}
+{\LARGE\bfseries Thermal Debonding of Adhesive Joints\\[0.35cm]
+in EV Battery Pack Disassembly}\par
+
+\vspace{0.9cm}
+{\large\itshape A parametric simulation study of localized heating windows\\
+for releasing bonded cells without thermal runaway}\par
+
+\vspace{1.2cm}
+{\normalsize In partial fulfilment of the requirements for the degree of\\
+Bachelor of Engineering}\par
+
+\vspace{2.0cm}
+\begin{tabular}{@{}r@{\hspace{0.6cm}}l@{}}
+\textbf{Author:} & Matteo Rizzolio \\[0.35cm]
+\textbf{Student ID:} & 2456368 \\[0.35cm]
+\textbf{Supervisor:} & \thesissupervisor \\
+\end{tabular}
+
+\vfill
+{\large Shanghai, China}\par
+\vspace{0.2cm}
+{\large October 2026}\par
+\vspace*{0.6cm}
+\end{titlepage}
+
+\pagenumbering{roman}
+
+\begin{abstract}
+% Abstract text.
+\end{abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\clearpage
+\pagenumbering{arabic}
+
+% ============================================================
+% CHAPTER 1
+% ============================================================
+
+\chapter{Introduction}
+
+\section{Background and motivation}
+% Paragraph.
+
+\section{Problem statement}
+% Paragraph.
+
+\section{Aim and scope of the thesis}
+% Paragraph.
+
+\section{Research questions}
+% Paragraph.
+
+\section{Structure of the thesis}
+% Paragraph.
+
+% ============================================================
+% CHAPTER 2
+% ============================================================
+
+\chapter{Fundamentals and State of the Art}
+
+\section{Adhesive bonding in battery packs}
+% Paragraph.
+
+\section{Thermal debonding methods}
+% Paragraph.
+
+\subsection{Localized heating methods: laser, induction and resistive heating}
+% Paragraph.
+
+\subsection{Alternative debonding approaches: ultrasonic, cryogenic and reversible adhesives}
+% Paragraph.
+
+\section{Thermomechanical behaviour of structural adhesives}
+% Paragraph.
+
+\section{Lithium-ion cell thermal safety}
+% Paragraph.
+
+\section{Battery dismantling, automation and regulation}
+% Paragraph.
+
+\section{Research gap and positioning of this work}
+% Paragraph.
+
+% ============================================================
+% CHAPTER 3
+% ============================================================
+
+\chapter{Reference Case and Material Data}
+
+\section{Reference case definition}
+% Paragraph.
+
+\section{Geometry and layer stacking}
+% Paragraph.
+
+\section{Material properties}
+% Paragraph.
+
+\subsection{Adhesive}
+% Paragraph.
+
+\subsection{Cell and aluminium adherends}
+% Paragraph.
+
+\subsection{Temperature-dependent properties}
+% Paragraph.
+
+\section{Operational temperature criteria}
+% Paragraph.
+
+\subsection{Adhesive debond threshold $T_{\mathrm{debond}}$}
+% Paragraph.
+
+\subsection{Cell safety criterion $T_{\mathrm{safe}}$}
+% Paragraph.
+
+\section{Summary of assumptions and data sources}
+% Paragraph.
+
+% ============================================================
+% CHAPTER 4
+% ============================================================
+
+\chapter{Theoretical Modelling}
+
+\section{Governing equations of transient heat conduction}
+% Paragraph.
+
+\section{Boundary conditions}
+% Paragraph.
+
+\subsection{Gaussian surface heat flux}
+% Paragraph.
+
+\subsection{Convection and radiation losses}
+% Paragraph.
+
+\section{Interface and contact resistance treatment}
+% Paragraph.
+
+\section{Dimensional analysis}
+% Paragraph.
+
+\subsection{Thermal penetration depth}
+% Paragraph.
+
+\subsection{Fourier number}
+% Paragraph.
+
+\subsection{Biot number}
+% Paragraph.
+
+\section{Definition of the process window}
+% Paragraph.
+
+% ============================================================
+% CHAPTER 5
+% ============================================================
+
+\chapter{Finite-Element Model and Verification}
+
+\section{Model geometry and domain extent}
+% Paragraph.
+
+\section{Symmetry assumptions and dimensionality}
+% Paragraph.
+
+\section{Mesh generation and interface refinement}
+% Paragraph.
+
+\section{Mesh-independence study}
+% Paragraph.
+
+\section{Energy-balance check}
+% Paragraph.
+
+\section{Verification against the semi-infinite-solid solution}
+% Paragraph.
+
+\section{Baseline case results}
+% Paragraph.
+
+% ============================================================
+% CHAPTER 6
+% ============================================================
+
+\chapter{Parametric Study and Sensitivity Analysis}
+
+\section{Parameter selection and ranges}
+% Paragraph.
+
+\section{Uncertain material and interface inputs}
+% Paragraph.
+
+\section{Fractional-factorial screening}
+% Paragraph.
+
+\section{Local refinement near the feasible-window boundary}
+% Paragraph.
+
+\section{Process-window map: heat flux versus duration}
+% Paragraph.
+
+\section{Sensitivity analysis}
+% Paragraph.
+
+\section{Summary of the parameter study}
+% Paragraph.
+
+% ============================================================
+% CHAPTER 7
+% ============================================================
+
+\chapter{Discussion}
+
+\section{Interpretation of the process window}
+% Paragraph.
+
+\section{Influence of assumptions and model limitations}
+% Paragraph.
+
+\section{Comparison with prior work}
+% Paragraph.
+
+\section{Implications for disassembly-oriented design}
+% Paragraph.
+
+\section{Threats to validity}
+% Paragraph.
+
+% ============================================================
+% CHAPTER 8
+% ============================================================
+
+\chapter{Conclusions and Outlook}
+
+\section{Main findings}
+% Paragraph.
+
+\section{Answers to the research questions}
+% Paragraph.
+
+\section{Limitations}
+% Paragraph.
+
+\section{Future work}
+% Paragraph.
+
+% ============================================================
+% BACK MATTER
+% ============================================================
+
+\begin{thebibliography}{99}
+% References.
+\end{thebibliography}
+
+\appendix
+
+\chapter{Model Parameters}
+% Paragraph.
+
+\chapter{Supplementary Mesh-Study Data}
+% Paragraph.
+
+\end{document}
