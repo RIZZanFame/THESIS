@@ -12,7 +12,9 @@ The thesis is planned to study localized heating as a way to release adhesive-bo
 
 ## Repository contents
 
-- `main.tex` — thesis source and document structure.
+- `main.tex` — root thesis file; contains the preamble, front matter, and the ordered `\input` calls used to assemble the document.
+- `chapters/` — one `.tex` source file for each of the eight thesis chapters.
+- `appendices/` — one `.tex` source file for each appendix.
 - `figures/tongji_logo.png` — logo used on the title page.
 - `main.pdf` — a compiled thesis PDF. Regenerate it after source changes before treating it as current.
 
